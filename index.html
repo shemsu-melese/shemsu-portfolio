@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <!-- SEO Meta Tags -->
-  <title>Shemsu Melese · Junior Full-Stack Developer & Freelancer</title>
-  <meta name="description" content="Shemsu Melese | Junior Full-Stack Developer studying Information Technology at Wolaita Sodo University. Specializing in responsive, accessible, and performant websites. Open for freelance opportunities worldwide.">
+  <title>Shemsu Melese · Certified Full-Stack Developer & Freelancer</title>
+  <meta name="description" content="Shemsu Melese | Junior Full-Stack Developer studying Information Technology at Wolaita Sodo University. Certified Full-Stack Developer (Wabiskills/Yomtech). Specializing in responsive, accessible, and performant websites. Open for freelance opportunities worldwide.">
   <meta name="author" content="Shemsu Melese">
-  <meta name="keywords" content="Freelance Full-Stack Developer, Junior Developer, React developer,  senior devloper, express developer, Responsive Designer, Wolaita Sodo University, Information Technology, Ethiopia, Shemsu Melese, Web Developer, Frontend Developer, Backend Developer, Freelance Web Developer, Remote Work, Portfolio, Projects, Services, Contact,  Web Designer, Web Development Services, Freelance Opportunities, Junior Full-Stack Developer, Shemsu Melese Portfolio, Shemsu Melese Projects, Shemsu Melese Services, Shemsu Melese Contact, Shemsu Melese Web Development, Shemsu Melese Frontend Development, Shemsu Melese Backend Development, Shemsu Melese Freelance Web Developer, Shemsu Melese Remote Work, Shemsu Melese Portfolio Website, Shemsu Melese Projects Showcase, Shemsu Melese Services Offered, Shemsu Melese Contact Information,  Shemsu Melese Web Design Services, Shemsu Melese Web Development Services, Shemsu Melese Freelance Opportunities Worldwide   ">
+  <meta name="keywords" content="Freelance Full-Stack Developer, Junior Developer, React developer,  senior devloper, express developer, Responsive Designer, Wolaita Sodo University, Information Technology, Ethiopia, Shemsu Melese, Web Developer,Certified Full-Stack Developer, Certified Frontend Developer,Certified Backend Developer, Certified Freelance Web Developer, Remote Work, Portfolio, Projects, Services, Contact,  Web Designer, Web Development Services, Freelance Opportunities, Certified Junior Full-Stack Developer, Shemsu Melese Portfolio, Shemsu Melese Projects, Shemsu Melese Services, Shemsu Melese Contact, Shemsu Melese Web Development, Shemsu Melese Frontend Development, Shemsu Melese Backend Development, Shemsu Melese Freelance Web Developer, Shemsu Melese Remote Work, Shemsu Melese Portfolio Website, Shemsu Melese Projects Showcase, Shemsu Melese Services Offered, Shemsu Melese Contact Information,  Shemsu Melese Web Design Services, Shemsu Melese Web Development Services, Shemsu Melese Freelance Opportunities Worldwide, Certified Full-Stack Developer, Wabiskills, Yomtech   ">
   
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Shemsu Melese |Junior Full-Stack Developer & Freelancer">
@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png"  href="./shemsu2018.jpg">
+  <link rel="icon" type="image/png"  href="./image/shemsu2018.jpg">
   
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -28,439 +28,8 @@
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* ===== MOBILE-FIRST CUSTOM STYLES (overrides & enhancements) ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    :root {
-      --bg: #f8fafc;
-      --bg-soft: #f1f5f9;
-      --surface: #ffffff;
-      --surface-hover: #e2e8f0;
-      --text: #0f172a;
-      --text-soft: #334155;
-      --border: #e2e8f0;
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-    }
-    .dark {
-      --bg: #0f172a;
-      --bg-soft: #1e293b;
-      --surface: #1e293b;
-      --surface-hover: #334155;
-      --text: #f1f5f9;
-      --text-soft: #cbd5e1;
-      --border: #334155;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', 'Noto Sans Ethiopic', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      transition: background 0.3s, color 0.3s;
-      line-height: 1.6;
-      padding-top: 70px; /* space for fixed header */
-    }
-    .container-custom {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-    /* navbar */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 50;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(12px);
-      background: rgba(var(--surface-rgb, 255,255,255), 0.85);
-      transition: background 0.3s;
-    }
-    .dark .navbar {
-      background: rgba(15, 23, 42, 0.9);
-    }
-    /* sidebar */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: -280px;
-      width: 280px;
-      height: 100%;
-      background: var(--surface);
-      border-right: 1px solid var(--border);
-      z-index: 60;
-      padding: 2rem 1.5rem;
-      overflow-y: auto;
-      transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 4px 0 20px rgba(0,0,0,0.05);
-    }
-    .sidebar.open {
-      left: 0;
-    }
-    .sidebar-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.3);
-      z-index: 55;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-    }
-    .sidebar-overlay.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .sidebar-close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: transparent;
-      border: none;
-      font-size: 1.5rem;
-      color: var(--text-soft);
-      cursor: pointer;
-    }
-    .sidebar-link {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.7rem 1rem;
-      border-radius: 12px;
-      color: var(--text-soft);
-      font-weight: 500;
-      transition: all 0.2s;
-      text-decoration: none;
-    }
-    .sidebar-link:hover, .sidebar-link.active {
-      background: var(--surface-hover);
-      color: var(--text);
-    }
-    .sidebar-link i {
-      width: 1.25rem;
-      text-align: center;
-    }
-    /* desktop nav */
-    .desktop-nav {
-      display: none;
-    }
-    @media (min-width: 1024px) {
-      .desktop-nav {
-        display: flex;
-      }
-      .mobile-menu-btn {
-        display: none !important;
-      }
-    }
-    .nav-link {
-      color: var(--text-soft);
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0.4rem 0;
-      border-bottom: 2px solid transparent;
-      transition: 0.2s;
-    }
-    .nav-link:hover {
-      color: var(--text);
-      border-bottom-color: var(--primary);
-    }
-    /* buttons */
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: linear-gradient(135deg, #2563eb, #9333ea);
-      color: #fff;
-      padding: 0.75rem 1.8rem;
-      border-radius: 9999px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border: none;
-      cursor: pointer;
-      transition: all 0.25s;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(37,99,235,0.25);
-    }
-    .btn-primary:hover {
-      transform: scale(1.02);
-      box-shadow: 0 8px 24px rgba(37,99,235,0.35);
-    }
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.8rem;
-      border-radius: 9999px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      border: 2px solid var(--border);
-      color: var(--text-soft);
-      background: transparent;
-      cursor: pointer;
-      transition: 0.25s;
-      text-decoration: none;
-    }
-    .btn-outline:hover {
-      background: var(--surface-hover);
-      border-color: var(--text);
-    }
-    /* profile */
-    .profile-container {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-    }
-    @media (min-width: 768px) {
-      .profile-container {
-        width: 280px;
-        height: 280px;
-      }
-    }
-    .profile-circle {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #2563eb, #9333ea);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(37,99,235,0.2);
-      transition: transform 0.4s;
-    }
-    .profile-circle:hover {
-      transform: scale(1.03);
-    }
-    .profile-initials {
-      font-size: 4rem;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: 2px;
-    }
-    .profile-initials img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    /* skill bars */
-    .progress-bar {
-      width: 100%;
-      height: 8px;
-      background: var(--surface-hover);
-      border-radius: 999px;
-      margin-top: 6px;
-      overflow: hidden;
-    }
-    .progress-fill {
-      height: 100%;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #2563eb, #9333ea);
-      width: 0%;
-      transition: width 1.2s ease;
-    }
-    .skill-item {
-      background: var(--surface);
-      padding: 1rem 1.2rem;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-    }
-    /* cards */
-    .service-card, .project-card, .testimonial-card, .hire-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 1.5rem;
-      transition: all 0.25s;
-      height: 100%;
-    }
-    .service-card:hover, .project-card:hover, .testimonial-card:hover, .hire-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-    }
-    .project-image {
-      height: 160px;
-      background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      color: #475569;
-      margin-bottom: 1rem;
-    }
-    .dark .project-image {
-      background: #334155;
-      color: #94a3b8;
-    }
-    .form-input {
-      width: 100%;
-      padding: 0.8rem 1.2rem;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: var(--bg);
-      color: var(--text);
-      font-size: 1rem;
-      transition: 0.2s;
-    }
-    .form-input:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
-    }
-    .error-message {
-      color: #ef4444;
-      font-size: 0.8rem;
-      display: block;
-      margin-top: 0.25rem;
-    }
-    /* faq */
-    .faq-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 0.75rem;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      color: var(--text);
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s;
-      color: var(--text-soft);
-      font-size: 0.95rem;
-    }
-    .faq-item.open .faq-answer {
-      max-height: 300px;
-      padding-top: 0.75rem;
-    }
-    .faq-icon {
-      font-size: 1.5rem;
-      transition: transform 0.3s;
-    }
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-    }
-    /* floating */
-    .telegram-float {
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      z-index: 40;
-      background: #0088cc;
-      color: #fff;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      box-shadow: 0 6px 20px rgba(0,136,204,0.4);
-      transition: 0.25s;
-      text-decoration: none;
-    }
-    .telegram-float:hover {
-      transform: scale(1.08);
-    }
-    .scroll-top {
-      position: fixed;
-      bottom: 5rem;
-      right: 1.5rem;
-      z-index: 40;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: 0.25s;
-      cursor: pointer;
-      color: var(--text);
-      opacity: 0;
-      pointer-events: none;
-    }
-    .scroll-top.visible {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .lang-toggle {
-      background: var(--surface-hover);
-      border: none;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      color: var(--text);
-      cursor: pointer;
-    }
-    /* contact */
-    .form-input{
-      color: green;
-    }
-    /* animations */
-    .animate-fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 0.7s ease forwards;
-    }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-float {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-    /* utility */
-    .gap-1 { gap: 0.25rem; }
-    .gap-2 { gap: 0.5rem; }
-    .gap-3 { gap: 0.75rem; }
-    .gap-4 { gap: 1rem; }
-    .gap-6 { gap: 1.5rem; }
-    .gap-8 { gap: 2rem; }
-    .gap-16 { gap: 4rem; }
-    /* mobile first grid */
-    .grid { display: grid; grid-template-columns: 1fr; }
-    @media (min-width: 640px) {
-      .grid.sm\:grid-cols-2 { grid-template-columns: 1fr 1fr; }
-    }
-    @media (min-width: 768px) {
-      .grid.md\:grid-cols-2 { grid-template-columns: 1fr 1fr; }
-      .grid.md\:grid-cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-      .grid.md\:grid-cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
-    }
-    @media (min-width: 1024px) {
-      .grid.lg\:grid-cols-2 { grid-template-columns: 1fr 1fr; }
-      .grid.lg\:grid-cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-      .grid.lg\:grid-cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <!-- SIDEBAR -->
@@ -468,19 +37,21 @@
     <button class="sidebar-close" id="sidebarClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
     <div class="flex flex-col items-center text-center mb-8">
       <div class="w-24 h-24 rounded-full bg-gradient-to-br from-[#2563eb] to-[#9333ea] flex items-center justify-center text-3xl font-bold text-white mb-4 shadow-lg overflow-hidden">
-        <img style="border-radius:50%; width:100%; height:100%; object-fit:cover;" src="./shemsu2018.jpg" alt="shemsu image">
+        <img style="border-radius:50%; width:100%; height:100%; object-fit:cover;" src="./image/shemsu2018.jpg" alt="shemsu image">
       </div>
-      <h3 class="text-xl font-bold text-[var(--text)]">Shemsu Melese</h3>
-      <p class="text-sm text-[var(--text-soft)]">Junior Full-stack Developer</p>
+      <h3 class="text-xl font-bold text-[var(--text1)]">Shemsu Melese</h3>
+      <p class="text-sm text-[var(--text-soft)]">Certified Full-stack Developer</p>
     </div>
     <nav class="flex flex-col gap-2">
       <a href="#hero" class="sidebar-link"><i class="fas fa-home w-5"></i> <span>Home</span></a>
       <a href="#about" class="sidebar-link"><i class="fas fa-user w-5"></i> <span>About</span></a>
       <a href="#skills" class="sidebar-link"><i class="fas fa-code w-5"></i> <span>Skills</span></a>
+      <!-- NEW: Certifications link -->
+      <a href="#certifications" class="sidebar-link"><i class="fas fa-certificate w-5"></i> <span>Certifications</span></a>
       <a href="#services" class="sidebar-link"><i class="fas fa-briefcase w-5"></i> <span>Services</span></a>
       <a href="#projects" class="sidebar-link"><i class="fas fa-laptop-code w-5"></i> <span>Projects</span></a>
       <a href="#process" class="sidebar-link"><i class="fas fa-diagram-project w-5"></i> <span>Process</span></a>
-      <a href="#testimonials" class="sidebar-link"><i class="fas fa-star w-5"></i> <span>Testimonials</span></a>
+      <!-- <a href="#testimonials" class="sidebar-link"><i class="fas fa-star w-5"></i> <span>Testimonials</span></a> -->
       <a href="#faq" class="sidebar-link"><i class="fas fa-question-circle w-5"></i> <span>FAQ</span></a>
       <a href="#contact" class="sidebar-link"><i class="fas fa-envelope w-5"></i> <span>Contact</span></a>
     </nav>
@@ -505,6 +76,8 @@
           <a href="#hero" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#skills" class="nav-link">Skills</a>
+          <!-- NEW: Certifications link -->
+          <a href="#certifications" class="nav-link">Certifications</a>
           <a href="#services" class="nav-link">Services</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#faq" class="nav-link">FAQ</a>
@@ -529,18 +102,18 @@
               <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
               <span>Available for freelance</span>
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[var(--text)]">Shemsu Melese</h1>
-            <p class="text-xl md:text-2xl text-[var(--text-soft)] mb-4 animate-float">Junior Full-Stack Developer & Freelancer</p>
-            <p class="text-lg text-[var(--text-soft)] mb-8 max-w-2xl">I help a businesses and startups build responsive, accessible, and performant websites. Just clean code and clear communication.</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[var(--text1)]">Shemsu Melese</h1>
+            <p class=" text-xl md:text-2xl text-[var(--text-soft)] mb-4 animate-float"> <strong class="certified inline-flex items-center gap-2   bg-[var(--surface)] bg-opacity-10 px-5 py-2.5 rounded-full   shadow-sm">Certified Full-Stack Developer & Freelancer</strong></p>
+            <p class="text-lg text-[var(--text1)] mb-8 max-w-2xl">I help a businesses and startups build responsive, accessible and performant websites. Just clean code and clear communication.</p>
             <div class="flex flex-wrap gap-4">
               <a href="#about" class="btn-outline"><i class="fas fa-chevron-down"></i> View More</a>
-              <a href="#projects" class="btn-outline"><i class="fas fa-eye"></i> View Projects</a>
+              <a href="#projects" class="btn-outline "><i class="fas fa-eye"></i> View Projects</a>
               <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
             </div>
           </div>
           <div class="flex justify-center lg:justify-end animate-fade-up" style="animation-delay:0.2s;">
             <div class="profile-container">
-              <div class="profile-circle"><span class="profile-initials"><img src="./shemsu2018.jpg" alt="Shemsu"></span></div>
+              <div class="profile-circle"><span class="profile-initials"><img src="./image/shemsu2018.jpg" alt="Shemsu"></span></div>
             </div>
           </div>
         </div>
@@ -556,7 +129,7 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8">
           <div class="hire-card"><h3 class="text-xl font-bold mb-3 text-[var(--text)]">Fast Delivery</h3><p class="text-[var(--text-soft)]">Landing pages in 3-5 days. Multi-page sites in 1-2 weeks. Clear timelines.</p></div>
-          <div class="hire-card"><h3 class="text-xl font-bold mb-3 text-[var(--text)]">Responsive Design</h3><p class="text-[var(--text-soft)]">Perfect on phones, tablets, and desktops. Every device, every screen.</p></div>
+          <div class="hire-card"><h3 class="text-xl font-bold mb-3 text-[var(--text)]">Responsive Design</h3><p class="text-[var(--text-soft)]">Perfect on phones, tablets and desktops. Every device, every screen.</p></div>
           <div class="hire-card"><h3 class="text-xl font-bold mb-3 text-[var(--text)]">Clean Code</h3><p class="text-[var(--text-soft)]">Well-documented, maintainable code. Easy for any developer to update.</p></div>
         </div>
       </div>
@@ -567,26 +140,28 @@
       <div class="container-custom">
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div class="animate-fade-up">
-            <span class="text-sm font-semibold text-[#2563eb] dark:text-[#22c55e] uppercase tracking-wider bg-[var(--surface)] px-4 py-2 rounded-full">About Me</span>
-            <h2 class="text-3xl md:text-4xl font-bold mt-6 mb-4 text-[var(--text)]">Information Technology student at Wolaita Sodo University, self-taught developer, and ready to build</h2>
-            <p class="text-[var(--text-soft)] mb-4">I'm currently pursuing my degree in Information Technology at Wolaita Sodo University. What began as a course requirement quickly became a passion. While studying, I've been self-teaching full-stack development through online resources and bootcamps, and I started freelancing to help a businesses get online without breaking the back.</p>
+            <span class="text-sm font-semibold text-[#2563eb] dark:text-[#22c55e] uppercase tracking-wider bg-[var(--surface)] px-4 py-2 rounded-full">About Me</span> <br><br>
+            <p class="text-[var(--text-soft)] mb-4">I'm currently a <strong>4th-year Bachelor's degree student in Information Technology (Regular program)</strong> at Wolaita Sodo University. What began as a course requirement quickly became a passion. While studying, I've been self-teaching full-stack development through online resources and bootcamps, and I started freelancing to help a businesses get online without breaking the back.</p>
+            <p class="text-[var(--text-soft)] mb-4">I've also completed a <strong>6-month Full-Stack Development training program</strong> through Wabiskills (Yomtech Global's educational platform), which gave me hands-on experience building and deploying complete web applications.</p>
             <p class="text-[var(--text-soft)] mb-6">I believe that good full-stack development is about empathy, understanding what users and clients need, then delivering it clearly and simply. My IT education gives me a strong foundation in problem-solving and systems thinking.</p>
             <div class="flex flex-wrap gap-4">
-              <div class="flex items-center gap-2 bg-[var(--surface)] px-4 py-2 rounded-full"><i class="fas fa-check-circle text-[#2563eb] dark:text-[#22d3ee]"></i><span class="text-[var(--text-soft)]">7+ projects delivered</span></div>
-              <div class="flex items-center gap-2 bg-[var(--surface)] px-4 py-2 rounded-full"><i class="fas fa-check-circle text-[#2563eb] dark:text-[#22d3ee]"></i><span class="text-[var(--text-soft)]">2+ repeat clients</span></div>
+      
               <div class="flex items-center gap-2 bg-[var(--surface)] px-4 py-2 rounded-full"><i class="fas fa-check-circle text-[#2563eb] dark:text-[#22d3ee]"></i><span class="text-[var(--text-soft)]">24h response time</span></div>
+              <!-- NEW: certificate badge -->
+              <div class="flex items-center gap-2 bg-[var(--surface)] px-4 py-2 rounded-full"><i class="fas fa-certificate text-[#2563eb] dark:text-[#22d3ee]"></i><span class="text-[var(--text-soft)]">Certified Full-Stack Developer</span></div>
             </div>
           </div>
-          <div class="bg-gradient-to-br from-[#5d5e5e] to-[#817e7f] p-8 rounded-3xl animate-fade-up shadow-xl" style="animation-delay:0.2s;">
-            <h3 class="text-2xl font-bold mb-6 text-white">⚡ Quick facts</h3>
-            <ul class="space-y-4">
-              <li class="flex items-start gap-3 text-white"><span class="font-bold">→</span><span><strong>Education:</strong> Information Technology, Wolaita Sodo University</span></li>
-              <li class="flex items-start gap-3 text-white"><span class="font-bold">→</span><span><strong>Based:</strong> Addis Ababa, Ethiopia (remote worldwide)</span></li>
-              <li class="flex items-start gap-3 text-white"><span class="font-bold">→</span><span><strong>Languages:</strong> English, Amharic</span></li>
-              <li class="flex items-start gap-3 text-white"><span class="font-bold">→</span><span><strong>Current focus:</strong> fullstack development</span></li>
-              <li class="flex items-start gap-3 text-white"><span class="font-bold">→</span><span><strong>Next goal:</strong> AI Integration in fullstack development</span></li>
-            </ul>
-          </div>
+         <!-- UPDATED: Quick facts card now uses service-card style -->
+<div class="service-card">
+  <h3 class="text-2xl font-bold mb-6 text-[var(--text)]">⚡ Quick facts</h3>
+  <ul class="space-y-4">
+    <li class="flex items-start gap-3 text-[var(--text-soft)]"><span class="font-bold text-[#2563eb] dark:text-[#22d3ee]">→</span><span><strong class="text-[var(--text)]">Education:</strong> 4th-Year BSc Information Technology (GC), Wolaita Sodo University</span></li>
+    <li class="flex items-start gap-3 text-[var(--text-soft)]"><span class="font-bold text-[#2563eb] dark:text-[#22d3ee]">→</span><span><strong class="text-[var(--text)]">Based:</strong> Addis Ababa, Ethiopia (remote worldwide)</span></li>
+    <li class="flex items-start gap-3 text-[var(--text-soft)]"><span class="font-bold text-[#2563eb] dark:text-[#22d3ee]">→</span><span><strong class="text-[var(--text)]">Languages:</strong> English, Amharic</span></li>
+    <li class="flex items-start gap-3 text-[var(--text-soft)]"><span class="font-bold text-[#2563eb] dark:text-[#22d3ee]">→</span><span><strong class="text-[var(--text)]">Current focus:</strong> fullstack development</span></li>
+    <li class="flex items-start gap-3 text-[var(--text-soft)]"><span class="font-bold text-[#2563eb] dark:text-[#22d3ee]">→</span><span><strong class="text-[var(--text)]">Next goal:</strong> AI Integration in fullstack development</span></li>
+  </ul>
+</div>
         </div>
       </div>
     </section>
@@ -600,16 +175,77 @@
         </div>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-html5 text-2xl text-[#e34f26]"></i><span class="font-semibold">HTML5</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">90%</span></div><div class="progress-bar"><div class="progress-fill" data-width="90" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-css3-alt text-2xl text-[#1572b6]"></i><span class="font-semibold">CSS3 / Tailwind</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-js text-2xl text-[#f7df1e]"></i><span class="font-semibold">JavaScript (ES6+)</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">80%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-react text-2xl text-[#61dafb]"></i><span class="font-semibold">React</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">75%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-node-js text-2xl text-[#339933]"></i><span class="font-semibold">Node.js</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">70%</span></div><div class="progress-bar"><div class="progress-fill" data-width="70" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-express-js text-2xl text-[#61dafb]"></i><span class="font-semibold">Express.js</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-database text-2xl text-[#61dafb]"></i><span class="font-semibold">SQL</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">75%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-git-alt text-2xl text-[#f05032]"></i><span class="font-semibold">Git / GitHub</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">80%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fas fa-plug text-2xl text-[#8a2be2]"></i><span class="font-semibold">REST APIs</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">70%</span></div><div class="progress-bar"><div class="progress-fill" data-width="70" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-css3-alt text-2xl text-[#1572b6]"></i><span class="font-semibold">CSS3 / Bootstrap / Tailwind</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">92%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-js text-2xl text-[#f7df1e]"></i><span class="font-semibold">JavaScript (ES6+)</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">86%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-react text-2xl text-[#61dafb]"></i><span class="font-semibold">React</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">95%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-node-js text-2xl text-[#339933]"></i><span class="font-semibold">Node.js</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">90%</span></div><div class="progress-bar"><div class="progress-fill" data-width="70" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-express-js text-2xl text-[#61dafb]"></i><span class="font-semibold">Express.js</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">95%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-database text-2xl text-[#61dafb]"></i><span class="font-semibold">SQL</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">92%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fab fa-git-alt text-2xl text-[#f05032]"></i><span class="font-semibold">Git / GitHub</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">89%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fas fa-plug text-2xl text-[#8a2be2]"></i><span class="font-semibold">REST APIs</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">91%</span></div><div class="progress-bar"><div class="progress-fill" data-width="70" style="width:0%;"></div></div></div>
           <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fas fa-mobile-alt text-2xl text-[#10b981]"></i><span class="font-semibold">Responsive Design</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">99%</span></div><div class="progress-bar"><div class="progress-fill" data-width="90" style="width:0%;"></div></div></div>
-          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fas fa-universal-access text-2xl text-[#6366f1]"></i><span class="font-semibold">Accessibility</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">75%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
+          <div class="skill-item"><div class="flex justify-between items-center"><div class="flex items-center gap-3"><i class="fas fa-universal-access text-2xl text-[#6366f1]"></i><span class="font-semibold">Accessibility</span></div><span class="text-sm font-bold text-[#2563eb] dark:text-[#22d3ee]">95%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75" style="width:0%;"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: CERTIFICATIONS & EDUCATION -->
+    <section id="certifications" class="py-20">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-sm font-semibold text-[#2563eb] dark:text-[#22c55e] uppercase tracking-wider bg-[var(--surface)] px-4 py-2 rounded-full">Education & Certifications</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-6 mb-4 text-[var(--text)]">Verified training & credentials</h2>
+          <p class="text-[var(--text-soft)]">Formal education and training that back up the skills above.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- NEW: Bachelor's degree card -->
+          <div class="hire-card">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#9333ea] flex items-center justify-center text-white text-2xl shrink-0">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-[var(--text)]">BSc in Information Technology</h3>
+                <p class="text-sm text-[var(--text-soft)] mb-1">Wolaita Sodo University · GC Program</p>
+                <p class="text-xs text-[var(--text-soft)] mb-3">4th Year · Bachelor's Degree (In Progress)</p>
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-[#2563eb] dark:text-[#22d3ee]">
+                  <i class="fas fa-hourglass-half"></i> Currently studying
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate card (Wabiskills) -->
+          <div class="hire-card">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#9333ea] flex items-center justify-center text-white text-2xl shrink-0">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-[var(--text)]">Full-Stack Development</h3>
+                <p class="text-sm text-[var(--text-soft)] mb-1">Wabiskills · Yomtech Global's Educational Platform</p>
+                <p class="text-xs text-[var(--text-soft)] mb-3">6-month intensive training program · Completed September 2026</p>
+                <a href="./image/shemsu-melese-fullstack-certificate.pdf" target="_blank"
+                   class="inline-flex items-center gap-2 text-sm font-medium text-[#2563eb] dark:text-[#22d3ee] hover:underline">
+                  <i class="fas fa-file-pdf"></i> View certificate (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder for future certificates -->
+          <!-- <div class="hire-card opacity-60 border-dashed md:col-span-2">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-[var(--surface-hover)] flex items-center justify-center text-[var(--text-soft)] text-2xl shrink-0">
+                <i class="fas fa-plus"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-[var(--text)]">More coming soon</h3>
+                <p class="text-sm text-[var(--text-soft)]">Currently working toward certifications in cloud deployment and AI integration.</p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -622,10 +258,13 @@
           <h2 class="text-3xl md:text-4xl font-bold mt-6 mb-4 text-[var(--text)]">What I can do for you</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Landing Pages</h3><p class="text-[var(--text-soft)] text-sm mb-3">Single-page, conversion-focused, mobile responsive</p></div>
-          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Business Websites</h3><p class="text-[var(--text-soft)] text-sm mb-3">5+ pages, contact form, Google Maps</p></div>
-          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">UI Implementation</h3><p class="text-[var(--text-soft)] text-sm mb-3">Figma to HTML/CSS/React, pixel-perfect</p></div>
-          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Bug Fixing</h3><p class="text-[var(--text-soft)] text-sm mb-3">Fix layout issues, broken functionality</p></div>
+          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">1. Web Development</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ Custom Business Websites <br>◉ Full-Stack Web Applications <br>
+          ◉ E-Commerce Platforms <br>◉ Landing Pages <br>◉ Admin Dashboards <br>◉ Portfolio & Personal Websites </p></div>
+          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">2. Mobile App Development</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ Android Applications <br>◉ Cross-Platform Applications <br>◉ REST API Integration <br>◉ Mobile Backend Systems</p></div>
+          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">3. Business Systems</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ School Management Systems <br>◉ Hospital/Clinic Management Systems <br>◉ Inventory Management Systems <br>◉ Customer Management Systems <br>◉ Booking/Appointment Systems <br>◉ Employee Management Systems</p></div>
+          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">4. Backend & Database</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ REST API Development <br>◉ MySQL Database Design <br>◉ Authentication & Authorization   <br>◉ Database Optimization</p></div>
+          <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">5. Modernization & Integration</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ SMS/Email Integration <br>◉ Third-Party API Integration <br>◉ Existing Website Modernization </p></div>
+           <div class="service-card"><h3 class="text-xl font-bold mb-2 text-[var(--text)]">6. Deployment & Maintenance</h3><p class="text-[var(--text-soft)] text-sm mb-3">◉ Website Deployment <br>◉ Backend Deployment <br>◉ Database Deployment <br>◉ Domain & Hosting Setup <br>◉ Bug Fixing <br>◉ Long-Term Maintenance </p></div>
         </div>
         <div class="text-center mt-12"><a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Get a custom quote</a></div>
       </div>
@@ -636,14 +275,174 @@
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="text-sm font-semibold text-[#2563eb] dark:text-[#22c55e] uppercase tracking-wider bg-[var(--surface)] px-4 py-2 rounded-full">Portfolio</span>
-          <h2 class="text-3xl md:text-4xl font-bold mt-6 mb-4 text-[var(--text)]">Recent client work</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mt-6 mb-4 text-[var(--text)]">Recent work</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="project-card"><div class="project-image"><i class="fas fa-store"></i></div><div class="p-0"><div class="flex items-center gap-2 mb-2"><span class="bg-[#64748b] text-white text-xs px-3 py-1.5 rounded-full">Local Business</span></div><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Bella's Bakery</h3><p class="text-[var(--text-soft)] text-sm mb-4">Responsive website with menu gallery, contact form, and Google Maps.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">HTML</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">CSS</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">JavaScript</span></div><div class="flex gap-3"><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all"><i class="fab fa-github"></i> Code</a></div></div></div>
-          <div class="project-card"><div class="project-image"><i class="fas fa-dumbbell"></i></div><div class="p-0"><div class="flex items-center gap-2 mb-2"><span class="bg-[#64748b] text-white text-xs px-3 py-1.5 rounded-full">Fitness</span></div><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Addis Fitness</h3><p class="text-[var(--text-soft)] text-sm mb-4">Landing page with booking integration, pricing tables, and trainer profiles.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">React</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Tailwind</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">API</span></div><div class="flex gap-3"><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">Live Demo</a><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">GitHub</a></div></div></div>
-          <div class="project-card"><div class="project-image"><i class="fas fa-utensils"></i></div><div class="p-0"><div class="flex items-center gap-2 mb-2"><span class="bg-[#64748b] text-white text-xs px-3 py-1.5 rounded-full">Restaurant</span></div><h3 class="text-xl font-bold mb-2 text-[var(--text)]">Kaldi's Coffee</h3><p class="text-[var(--text-soft)] text-sm mb-4">Digital menu, reservation form, and photo gallery with lazy loading.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">HTML</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">SCSS</span><span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">JS</span></div><div class="flex gap-3"><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">Live Demo</a><a href="#" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">GitHub</a></div></div></div>
+          <div class="project-card">
+  <!-- Image Slider -->
+  <div class="project-image relative overflow-hidden rounded-t-2xl">
+    <div class="slider-track flex transition-transform duration-700 ease-in-out">
+
+      <!-- Slide 1 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/Screenshot 1.png"
+             alt="project screenshot 1"
+             class="w-full h-auto object-cover"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-sm text-gray-400\'>Image not found</span>';">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/Screenshot 2.png" alt="project screenshot 2" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/Screenshot mobile 1.png" alt="Slide 3" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/Screenshot 4.png" alt="Slide 4" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/Screenshot 5.png" alt="Slide 5" class="w-full h-auto object-cover">
+      </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+    </div>
+  </div>
+
+  <!-- Content  -->
+  <div class="p-0">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="bg-[#64748b] text-white text-xs px-3 py-1.5 rounded-full">Local Business</span>
+    </div>
+    <h3 class="text-xl font-bold mb-2 text-[var(--text)]">  Joda Electronics</h3>
+    <p class="text-[var(--text-soft)] text-sm mb-4">A full-stack e-commerce platform for a local electronics retailer. The React + Tailwind frontend delivers a fast, responsive shopping experience with a product catalog, image gallery, search, and contact form. A REST API built with Express handles products, orders, and customer inquiries, with all data persisted in MySQL. A secure admin dashboard lets the owner add new products, update existing listings (price, stock, images, description), and manage social media links — all without touching code. An embedded Google Map helps customers find the physical store.</p>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">React</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">JavaScript</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Tailwind CSS</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Express</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">MySQL</span>
+  </div>
+
+    <div class="flex gap-3">
+      <!-- <a href="https://joda-electronics.netlify.app/" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a> -->
+      <a href="https://github.com/shemsu-melese/JODA_ELECTRONICS.git" target="_blank" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">
+        <i class="fab fa-github"></i> Code
+      </a>
+    </div>
+  </div>
+
+</div>
+  
+
+<div class="project-card"><!-- Image Slider -->
+  <div class="project-image relative overflow-hidden rounded-t-2xl">
+    <div class="slider-track flex transition-transform duration-700 ease-in-out">
+
+      <!-- Slide 1 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/wab screen shoot/Screenshot 1.png"
+             alt="project screenshot 1"
+             class="w-full h-auto object-cover"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-sm text-gray-400\'>Image not found</span>';">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/wab screen shoot/Screenshot 2.png" alt="project screenshot 2" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/wab screen shoot/Screenshot 6.png" alt="Slide 3" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/wab screen shoot/Screenshot 4.png" alt="Slide 4" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide min-w-full bg-[var(--surface)] flex items-center justify-center">
+        <img src="./image/wab screen shoot/Screenshot 5.png" alt="Slide 5" class="w-full h-auto object-cover">
+      </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+      <span class="dot w-2 h-2 rounded-full bg-white/60"></span>
+    </div>
+  </div>
+
+  <!-- Content (unchanged) -->
+  <div class="p-0">
+    <div class="flex items-center gap-2 mb-2">
+    <span class="bg-[#64748b] text-white text-xs px-3 py-1.5 rounded-full">online meeting and collaboration platform</span>
+   
+  </div>
+
+  <h3 class="text-xl font-bold mb-2 text-[var(--text)]">WabiSeminar</h3>
+
+  <p class="text-[var(--text-soft)] text-sm mb-4">
+    A full-stack online meeting and collaboration platform designed to compete with
+    Google Meet, Zoom, and Microsoft Teams — but with a unique productivity-first
+    identity: <strong>"Meet. Focus. Collaborate."</strong> Features include WebRTC
+    video/audio streaming, real-time chat via Socket.IO, screen sharing, participant
+    management with waiting rooms, automated attendance tracking with CSV export,
+    and the signature <strong>WabiFocus</strong> system for setting meeting goals,
+    agendas, decisions, and action items. Built with a React + Vite frontend,
+    Node.js + Express backend, MySQL database (XAMPP), JWT authentication, and
+    a clean layered architecture (Controllers → Services → Repositories).
+  </p>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">React</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Vite</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">JavaScript</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Express</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Node.js</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">MySQL</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">Socket.IO</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">WebRTC</span>
+    <span class="bg-[var(--surface)] px-3 py-1.5 rounded-full text-xs">JWT</span>
+  </div>
+
+    <div class="flex gap-3">
+      <!-- <a href="https://joda-electronics.netlify.app/" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a> -->
+      <a href="https://github.com/shemsu-melese/wabi-seminar.git" target="_blank" class="border-2 border-[var(--border)] px-4 py-2 rounded-full text-xs font-medium hover:bg-[#64749b] hover:text-white transition-all">
+        <i class="fab fa-github"></i> Code
+      </a>
+    </div>
+  </div>
+
+</div>
+        
         </div>
-        <div class="text-center mt-12"><a href="https://github.com/shemsu-melese" target="_blank" class="btn-outline"><i class="fab fa-github"></i> View all on GitHub</a></div>
+
       </div>
     </section>
 
@@ -664,7 +463,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-20 bg-[var(--bg-soft)]">
+    <!-- <section id="testimonials" class="py-20 bg-[var(--bg-soft)]">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="text-sm font-semibold text-[#2563eb] dark:text-[#22c55e] uppercase tracking-wider bg-[var(--surface)] px-4 py-2 rounded-full">Testimonials</span>
@@ -676,7 +475,7 @@
           <div class="testimonial-card"><div class="flex items-center gap-1 text-[#9333ea] mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-[var(--text-soft)] mb-4 italic">"Our old site was slow. Shemsu redesigned everything and now our mobile traffic has tripled."</p><div class="flex items-center gap-3"><div class="w-12 h-12 bg-gradient-to-r from-[#2563eb] to-[#9333ea] rounded-full flex items-center justify-center text-white font-bold">HL</div><div><h4 class="font-bold text-[var(--text)]">Hanna Lemma</h4><p class="text-xs text-[var(--text-soft)]">Marketing Lead, EcoPay</p></div></div></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQ -->
     <section id="faq" class="py-20">
@@ -687,9 +486,33 @@
         </div>
         <div class="max-w-2xl mx-auto">
           <div class="faq-item"><div class="faq-question"><span>How long does a website take?</span><span class="faq-icon">+</span></div><div class="faq-answer">Landing pages: 3–5 days. Multi-page sites: 1–2 weeks. I'll always give you a clear timeline upfront.</div></div>
-          <div class="faq-item"><div class="faq-question"><span>Do I need to know code?</span><span class="faq-icon">+</span></div><div class="faq-answer">No! I explain everything in plain English. You don't need to know any technical terms.</div></div>
+          <div class="faq-item"><div class="faq-question"><span>Do I need to know code?</span><span class="faq-icon">+</span></div><div class="faq-answer">No! I explain everything. You don't need to know any technical terms.</div></div>
           <div class="faq-item"><div class="faq-question"><span>What if I don't like the design?</span><span class="faq-icon">+</span></div><div class="faq-answer">I include revisions in every package. We work together until you're 100% happy.</div></div>
-          <div class="faq-item"><div class="faq-question"><span>Do you offer maintenance?</span><span class="faq-icon">+</span></div><div class="faq-answer">Yes! Monthly retainer starts at $49/month for updates, backups, and security.</div></div>
+          <div class="faq-item">
+  <div class="faq-question">
+    <span>Do you offer maintenance?</span>
+    <span class="faq-icon">+</span>
+  </div>
+  <div class="faq-answer">
+    <p class="mb-3">Absolutely!  I keep your site fast, secure and up to date — so you can focus on your business, not your website.</p>
+    <div class="bg-[var(--bg-soft)] border border-[var(--border)] rounded-xl p-4">
+      <p class="text-sm font-semibold text-[var(--text)] mb-2 flex items-center gap-2">
+        <i class="fas fa-star text-[#9333ea]"></i> Maintenance Plan
+      </p>
+      <ul class="space-y-1 text-sm text-[var(--text-soft)]">
+        <li><i class="fas fa-circle-check text-green-500"></i> Regular updates &amp; content changes</li>
+        <li><i class="fas fa-circle-check text-green-500"></i> Automatic backups (never lose data)</li>
+        <li><i class="fas fa-circle-check text-green-500"></i> Security monitoring &amp; patches</li>
+        <li><i class="fas fa-circle-check text-green-500"></i> Priority support &amp; bug fixes</li>
+      </ul>
+      <p class="mt-3 text-sm font-semibold text-[#2563eb] dark:text-[#22d3ee] flex items-center gap-2">
+        <i class="fas fa-comments"></i> Let's talk about a plan that fits your needs and budget
+      </p>
+    </div>
+  </div>
+</div>
+          <!-- NEW: FAQ about formal training / degree -->
+          <div class="faq-item"><div class="faq-question"><span>Are you formally trained?</span><span class="faq-icon">+</span></div><div class="faq-answer">Yes — I'm a 4th-year BSc Information Technology student (Regular program) at Wolaita Sodo University, and I completed a 6-month Full-Stack Development program with Wabiskills (Yomtech Global's educational platform). My certificate is available in the Education &amp; Certifications section.</div></div>
         </div>
       </div>
     </section>
@@ -717,7 +540,7 @@
           <div class="bg-[var(--surface)] p-8 rounded-3xl border border-[var(--border)] shadow-xl">
             <h3 class="text-2xl font-bold mb-6 text-[var(--text)]">Send a message</h3>
             <form id="contactForm">
-              <div class="mb-4"><label for="name" class="block text-sm font-medium mb-2 text-[var(--text)]">Full name</label><input type="text" id="name" class="form-input"  placeholder="e.g., Meron Bekele"><span class="error-message" id="nameError"></span></div>
+              <div class="mb-4"><label for="name" class="block text-sm font-medium mb-2 text-[var(--text)]" autofocus>Full name</label><input type="text" id="name" class="form-input"  placeholder="e.g., Meron Bekele"><span class="error-message" id="nameError"></span></div>
               <div class="mb-4"><label for="email" class="block text-sm font-medium mb-2 text-[var(--text)]">Email address</label><input type="email" id="email" class="form-input" placeholder="meron@example.com" class="form-input"><span class="error-message" id="emailError"></span></div>
               <div class="mb-4"><label for="phone" class="block text-sm font-medium mb-2 text-[var(--text)]">Phone number </label><input type="tel" id="phone" class="form-input" placeholder="country code + your number, e.g., +251 925707668"><span class="error-message" id="phoneError"></span></div>
               <div class="mb-6"><label for="message" class="block text-sm font-medium mb-2 text-[var(--text)]">Project description</label><textarea id="message" rows="4" class="form-input" placeholder="Tell me about your project..." class="form-input"></textarea><span class="error-message" id="messageError"></span></div>
@@ -734,12 +557,12 @@
   <footer class="bg-[var(--bg-soft)] border-t border-[var(--border)] py-12">
     <div class="container-custom">
       <div class="grid md:grid-cols-4 gap-8">
-        <div><h3 class="text-2xl font-bold mb-4 text-[var(--text)]"><span class="bg-gradient-to-r from-[#2563eb] to-[#9333ea] bg-clip-text text-transparent">S</span>hemsu<span class="bg-gradient-to-r from-[#2563eb] to-[#9333ea] bg-clip-text text-transparent">.</span></h3><p class="text-sm text-[var(--text-soft)] mb-4">Junior Full-stack Developer & Freelancer. Information Technology student at Wolaita Sodo University. Helping a businesses get online with clean, responsive websites.</p></div>
-        <div><h4 class="font-bold mb-4 text-[var(--text)]">Quick links</h4><ul class="space-y-2 text-sm"><li><a href="#hero" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Home</a></li><li><a href="#about" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">About</a></li><li><a href="#skills" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Skills</a></li><li><a href="#projects" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Projects</a></li></ul></div>
-        <div><h4 class="font-bold mb-4 text-[var(--text)]">Services</h4><ul class="space-y-2 text-sm"><li class="text-[var(--text-soft)]">Landing Pages</li><li class="text-[var(--text-soft)]">Business Websites</li><li class="text-[var(--text-soft)]">UI Implementation</li><li class="text-[var(--text-soft)]">Bug Fixing</li></ul></div>
+        <div><h3 class="text-2xl font-bold mb-4 text-[var(--text)]"><span class="bg-gradient-to-r from-[#2563eb] to-[#9333ea] bg-clip-text text-transparent">S</span>hemsu<span class="bg-gradient-to-r from-[#2563eb] to-[#9333ea] bg-clip-text text-transparent">.</span></h3><p class="text-sm text-[var(--text-soft)] mb-4">Junior Full-stack Developer & Freelancer. 4th-Year BSc Information Technology student at Wolaita Sodo University. Helping a businesses get online with clean, responsive websites.</p></div>
+        <div><h4 class="font-bold mb-4 text-[var(--text)]">Quick links</h4><ul class="space-y-2 text-sm"><li><a href="#hero" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Home</a></li><li><a href="#about" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">About</a></li><li><a href="#skills" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Skills</a></li><li><a href="#certifications" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Education &amp; Certifications</a></li><li><a href="#projects" class="text-[var(--text-soft)] hover:text-[#2563eb] dark:hover:text-[#22d3ee] transition">Projects</a></li></ul></div>
+        <div><h4 class="font-bold mb-4 text-[var(--text)]">Services</h4><ul class="space-y-2 text-sm"><li class="text-[var(--text-soft)]">Web Development</li><li class="text-[var(--text-soft)]">Mobile App Development</li><li class="text-[var(--text-soft)]">Business Systems</li><li class="text-[var(--text-soft)]">Backend & Database</li><li class="text-[var(--text-soft)]">Modernization & Integration</li><li class="text-[var(--text-soft)]">Deployment & Maintenance</li> </ul></div>
         <div><h4 class="font-bold mb-4 text-[var(--text)]">Availability</h4><div class="inline-flex items-center gap-2 bg-gradient-to-r from-[#2563eb] to-[#9333ea] text-white px-4 py-2 rounded-full text-xs font-medium mb-3 shadow-md"><span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>Available for freelance</div><p class="text-sm text-[var(--text-soft)]">Response time: <strong>within 24h</strong></p></div>
       </div>
-      <div class="border-t border-[var(--border)] mt-8 pt-8 text-center text-sm text-[var(--text-soft)]"><p>© <span id="currentYear"></span> Shemsu Melese · Information Technology Student at Wolaita Sodo University · Junior Full-Stack Developer & Freelancer.</p></div>
+      <div class="border-t border-[var(--border)] mt-8 pt-8 text-center text-sm text-[var(--text-soft)]"><p>© <span id="currentYear"></span> Shemsu Melese · 4th-Year BSc Information Technology Student at Wolaita Sodo University · Junior Full-Stack Developer & Freelancer.</p></div>
     </div>
   </footer>
 
@@ -878,6 +701,40 @@
         }
       });
     })();
+
+    // image slider code
+    document.querySelectorAll('.project-card').forEach(card => {
+  const track = card.querySelector('.slider-track');
+  const dots  = card.querySelectorAll('.dot');
+  if (!track) return;
+
+  const total = track.children.length;
+  let index = 0;
+
+  function goTo(i) {
+    index = (i + total) % total;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d, k) => {
+      d.classList.toggle('bg-white', k === index);
+      d.classList.toggle('bg-white/60', k !== index);
+    });
+  }
+
+  // Auto change every 5 seconds
+  let timer = setInterval(() => goTo(index + 1), 5000);
+
+  // Pause on hover (nice UX)
+  card.addEventListener('mouseenter', () => clearInterval(timer));
+  card.addEventListener('mouseleave', () => {
+    timer = setInterval(() => goTo(index + 1), 5000);
+  });
+
+  // Click dots to jump
+  dots.forEach((dot, k) => dot.addEventListener('click', () => goTo(k)));
+
+  goTo(0);
+});
+
   </script>
 </body>
 </html>
